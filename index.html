@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Bootstrap Assignment 2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <script>
+      var i=1;
+      function playVid()
+      {
+        vid=document.getElementById("welcome-video");
+        if(i==1)
+          {
+            vid.play();
+            i=0;
+            document.getElementById("play-button").style.display="none";
+            document.getElementById("pause-button").style.display="block";
+          }
+        else
+        {
+          vid.pause();
+          i=1;
+          document.getElementById("pause-button").style.display="none";
+          document.getElementById("play-button").style.display="block";
+        }
+      }
+    </script>
+    
+</head>
+<body>
+    <div class="container-fluid px-0">
+        <div class="row"> 
+            <div class="col-12">
+
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid ps-4 pe-5">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/logo.JPG" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                            Gemini Solutions
+                          </a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <ul class="nav">
+                                <li class="nav-item ps-5">
+                                  <a class="nav-link" aria-current="page" href="#">Pricing</a>
+                                </li>
+                                <li class="nav-item ps-4">
+                                  <a class="nav-link" aria-current="page" href="#">Community</a>
+                                </li>
+                                <li class="nav-item ps-4">
+                                  <a class="nav-link" aria-current="page" href="#">Support</a>
+                                </li>
+                              </ul>
+                          </ul>
+
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><button class="btn btn-outline-primary px-5" type="submit">LOGIN</button></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#"><button class="btn btn-primary px-5" type="submit">Register</button></a>
+                            </li>
+                          </ul>
+                      </div>
+                    </div>
+                  </nav>
+                
+                  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <video src="images/video.mp4" class="d-block w-100" id="welcome-video"></video>
+                        <div class="carousel-caption d-none d-md-block pb-5">
+                          <button type="button" class="btn btn-link mb-5" onclick="playVid();">
+                            <h1 class="text-white" id="play-button"><i class="bi bi-play-circle"></i></h1>
+                            <h1 class="text-white display-none" id="pause-button"><i class="bi bi-pause-circle"></i></h1>
+                          </button>
+                          <h1 class="text-white pb-4 pt-5">The largest community of photo enthusiasts</h1>
+                          <button class="btn btn-primary mb-5 mt-4 px-5" type="submit">Join Today</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-sm-12 col-md-6">
+                <h1>Snap photos and share like never before</h1>
+            </div>
+            <div class="col-sm-12 col-md-6"></div>
+            
+            <div class="col-sm-12 col-md-6">
+                <div class="card border-0 pt-4">
+                    <div class="card-body px-0">
+                      <h4 class="card-title pt-3">Sed ut perspiciatis</h4>
+                      <p class="card-text pt-3">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                      <a href="#" class="btn btn-outline-primary mt-4">Learn more</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="card border-0 pt-4">
+                    <div class="card-body px-0">
+                      <h4 class="card-title pt-3">Lorem ipsum dolor</h4>
+                      <p class="card-text pt-3">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.ratione voluptatem sequi nesciunt</p>
+                      <a href="#" class="btn btn-outline-primary mt-4">Learn more</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="card border-0 pt-4">
+                    <div class="card-body px-0">
+                      <h4 class="card-title pt-3">Nemo enim ipsam</h4>
+                      <p class="card-text pt-3">Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+                      <a href="#" class="btn btn-outline-primary mt-4">Learn more</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="card border-0 pt-4">
+                    <div class="card-body px-0">
+                      <h4 class="card-title pt-3">Tempor incididunt</h4>
+                      <p class="card-text pt-3">Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.ratione voluptatem sequi nesciunt</p>
+                      <a href="#" class="btn btn-outline-primary mt-4">Learn more</a>
+                    </div>
+                  </div>
+            </div>
+            
+
+        </div>
+
+    </div>
+
+    <div class="container pt-5">
+        <div class="text-center">
+            <h1>Ready to take a free trial?</h1>
+            <p class="py-4 px-4 large-p-fonts">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+            <h1>Subscribe for free</h1>
+        </div>
+        <div class="border border-info p-4 pb-5 mt-4 mb-5">
+        <form class="row g-3 border-1 border-outline">
+            <div class="col-md-4 pe-5">
+              <label for="firstname" class="form-label">First Name</label>
+              <input type="name" class="form-control" id="firstname" placeholder="Placeholder">
+            </div>
+            <div class="col-md-4 pe-5">
+                <label for="middlename" class="form-label">Middle Name</label>
+                <input type="name" class="form-control" id="middlename" placeholder="Placeholder">
+              </div>
+            <div class="col-md-4 pe-5">
+                <label for="lastname" class="form-label">Last Name</label>
+                <input type="name" class="form-control" id="lastname" placeholder="Placeholder">
+              </div>
+            <div class="col-md-4 pe-5">
+                <label for="gender" class="form-label">Gender</label>
+                <select class="form-select" aria-label="Default select example" id="gender">
+                    <option selected>Select</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                  </select>
+              </div>
+            <div class="col-md-4 pe-5">
+                  <label for="age" class="form-label">Age</label>
+                  <input type="name" class="form-control" id="age" placeholder="Placeholder">
+                </div>
+            <div class="col-md-4 pe-5">
+                  <label for="cno" class="form-label">Contact Number</label>
+                  <input type="name" class="form-control" id="cno" placeholder="Placeholder">
+                </div>
+            <div class="col-12 pe-5">
+              <label for="inputAddress" class="form-label">Address</label>
+              <textarea rows="4" class="form-control" id="inputAddress" placeholder="Write your message here"></textarea>
+            </div>
+
+            <div class="col-12 text-center mt-5">
+              <button type="submit" class="btn btn-outline-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row px-0 py-5">
+            <div class="col-md-6 col-sm-12 py-4">
+                <img src="images/img1.png" alt="image" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-sm-12 py-4 ps-4 pe-5">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                  <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williams burg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamc atcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row px-0 py-5">
+            <div class="col-md-6 col-sm-12 py-4">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. 
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          This is the second item's accordion body.It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          This is the third item's accordion body.It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            
+        </div>
+        <div class="col-md-6 col-sm-12 py-4">
+            <img src="images/img2.png" alt="image" class="img-fluid">
+        </div>
+    </div>
+    </div>
+
+    <div class="container">
+      <div class="px-0 py-5 text-center">
+        <p class="large-p-fonts px-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+      <i class="bi bi-x-circle large-p-fonts"></i>
+      <p>Nemo enim ipsam
+      </p>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="py-5 text-center">
+        <h1>You’re in good company</h1>
+        <p class="px-5 large-p-fonts">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+      </div>
+      <div class="pb-5">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-12  pt-4">
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Cras justo odio
+                  <span class="badge bg-primary rounded-pill">12</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Dapibus ac facilisis in
+                  <span class="badge bg-primary rounded-pill">54</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Morbi leo risus
+                  <span class="badge bg-primary rounded-pill">5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Porta ac consectetur ac
+                  <span class="badge bg-primary rounded-pill">123</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Vestibulum at eros
+                  <span class="badge bg-primary rounded-pill">65</span>
+                </li>
+              </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 col-12 pt-4">
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Cras justo odio
+                <span class="badge bg-primary rounded-pill">12</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Dapibus ac facilisis in
+                <span class="badge bg-primary rounded-pill">54</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Morbi leo risus
+                <span class="badge bg-primary rounded-pill">5</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Porta ac consectetur ac
+                <span class="badge bg-primary rounded-pill">123</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Vestibulum at eros
+                <span class="badge bg-primary rounded-pill">65</span>
+              </li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12  pt-4">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Cras justo odio
+              <span class="badge bg-primary rounded-pill">12</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Dapibus ac facilisis in
+              <span class="badge bg-primary rounded-pill">54</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Morbi leo risus
+              <span class="badge bg-primary rounded-pill">5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Porta ac consectetur ac
+              <span class="badge bg-primary rounded-pill">123</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Vestibulum at eros
+              <span class="badge bg-primary rounded-pill">65</span>
+            </li>
+          </ul>
+      </div>
+          <div class="col-md-3 col-sm-6 col-12 pt-4">
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Cras justo odio
+                <span class="badge bg-primary rounded-pill">12</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Dapibus ac facilisis in
+                <span class="badge bg-primary rounded-pill">54</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Morbi leo risus
+                <span class="badge bg-primary rounded-pill">5</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Porta ac consectetur ac
+                <span class="badge bg-primary rounded-pill">123</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Vestibulum at eros
+                <span class="badge bg-primary rounded-pill">65</span>
+              </li>
+            </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
